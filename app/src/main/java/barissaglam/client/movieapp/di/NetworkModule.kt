@@ -7,8 +7,7 @@ import barissaglam.client.movieapp.data.service.RemoteApiService
 import barissaglam.client.movieapp.util.DateDeserializer
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.google.gson.GsonBuilder
-import com.readystatesoftware.chuck.ChuckInterceptor
-import dagger.Module
+ import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
 import okhttp3.ResponseBody
@@ -46,7 +45,7 @@ class NetworkModule {
     fun provideApi(application: Application, builder: Retrofit.Builder, okHttpClientBuilder: OkHttpClient.Builder, converterFactory: Converter.Factory, interceptor: ApiInterceptor): RemoteApiService {
         if (BuildConfig.DEBUG) {
             okHttpClientBuilder.addNetworkInterceptor(StethoInterceptor())
-            okHttpClientBuilder.addInterceptor(ChuckInterceptor(application))
+
         }
         okHttpClientBuilder.addInterceptor(interceptor)
         val client = okHttpClientBuilder.build()

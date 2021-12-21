@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/movieItemLargeHeight"
             app:applyCorner="@{true}"
+
             app:imageUrl="@{movie.imagePath}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

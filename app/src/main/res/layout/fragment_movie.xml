@@ -104,7 +104,7 @@
                             android:layout_height="48dp"
                             android:layout_marginStart="@dimen/margin_8dp"
                             android:padding="@dimen/toolbarLogoPadding"
-                            android:src="@drawable/logo"
+
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -114,7 +114,7 @@
                             android:id="@+id/textViewTitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Movie App"
+                            android:text="Search"
                             android:textColor="@color/gray9ba0a6"
                             android:textSize="@dimen/textSizeMedium"
                             app:layout_constraintBottom_toBottomOf="parent"

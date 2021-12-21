@@ -21,7 +21,7 @@ class MovieListViewModel @Inject constructor(
     private val movieListUseCase: MovieListUseCase,
     private val searchMovieUseCase: SearchMovieUseCase
 ) : BaseViewModel() {
-    /** LiveData for ViewState **/
+
     private val liveDataViewState = MutableLiveData<MovieListFragmentViewState>()
     val liveDataViewState_: LiveData<MovieListFragmentViewState> = liveDataViewState
     private var dataSource: MovieItemDataSource? = null
